@@ -1,14 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Personal Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <header class="header"></header>
-    <main class="main"></main>
-    <footer class="footer"></footer>
-</body>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <h1>JohnDoe</h1>
+        <picture class="profile-image">
+          <source
+            media="(max-width: 425px)"
+            srcset="./images/profile-image-small.jpg"
+          />
+          <source
+            media="(max-width: 768px)"
+            srcset="./images/profile-image-medium.jpg"
+          />
+          <img src="./images/profile-image-large.jpg" alt="profile picture" />
+        </picture>
+        <div class="about">
+          <h2>About Me</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis
+            cupiditate sed porro incidunt? Et ad omnis dolores laboriosam sequi
+            rerum provident, ipsam illum obcaecati eveniet eos, incidunt sapiente
+            odit molestias!
+          </p>
+        </div>
+      </header>
+      <main class="main"></main>
+      <footer class="footer"></footer>
+    </div>
+  </body>
 </html>
