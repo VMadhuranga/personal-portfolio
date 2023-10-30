@@ -16,12 +16,11 @@ body {
 .container {
   display: flex;
   flex-direction: column;
-  gap: 25px;
+  gap: 50px;
   max-width: 1000px;
   margin: 0 auto;
 }
 
-.main,
 .footer {
   border: 2px solid black;
   flex: 1;
@@ -61,6 +60,71 @@ body {
   /* font-size: 1.2rem; */
   font-size: calc(1rem + 0.5vw);
   color: #374151;
+}
+
+.main h2 {
+  font-size: calc(1.5rem + 2vw);
+  margin-bottom: 15px;
+}
+
+.project-container {
+  max-width: 100%;
+  display: grid;
+  place-content: center;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 30px;
+}
+
+.project-card {
+  box-shadow: 5px 5px 10px 0 rgba(0, 0, 0, 0.2);
+}
+
+.project-screenshot {
+  font-size: 1.5rem;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+}
+
+.project-details {
+  padding: 10px 10px 35px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.project-details h3 {
+  margin-right: auto;
+}
+
+.project-link {
+  width: 15px;
+}
+
+.one {
+  background-color: rgb(136, 54, 54);
+}
+
+.two {
+  background-color: rgb(117, 112, 189);
+}
+
+.three {
+  background-color: rgb(39, 141, 39);
+}
+
+.four {
+  background-color: rgb(215, 91, 219);
+}
+
+.five {
+  background-color: rgb(233, 129, 81);
+}
+
+.six {
+  background-color: rgb(76, 185, 221);
 }
 
 @media (max-width: 800px) {
@@ -111,5 +175,9 @@ body {
     margin: 0;
     padding: 0;
     box-shadow: none;
+  }
+
+  .main h2 {
+    text-align: center;
   }
 }
