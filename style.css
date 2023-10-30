@@ -21,11 +21,6 @@ body {
   margin: 0 auto;
 }
 
-.footer {
-  border: 2px solid black;
-  flex: 1;
-}
-
 .header {
   position: relative;
   display: flex;
@@ -127,6 +122,46 @@ body {
   background-color: rgb(76, 185, 221);
 }
 
+.footer {
+  color: white;
+  padding: 20px 0 30px;
+  background: #06b6d4;
+  box-shadow: 0 0 0 100vmax #06b6d4;
+  clip-path: inset(0 -100vw);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.footer h2 {
+  font-size: calc(1.5rem + 2vw);
+}
+
+.footer p {
+  font-size: 1.1rem;
+}
+
+.footer address {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.footer address img {
+  width: 20px;
+  margin-right: 10px;
+  vertical-align:middle;
+}
+
+.handles {
+  display: flex;
+  gap: 30px;
+}
+
+.handles img {
+  width: 30px;
+}
+
 @media (max-width: 800px) {
   .header {
     display: initial;
@@ -179,5 +214,13 @@ body {
 
   .main h2 {
     text-align: center;
+  }
+
+  .footer h2 {
+    text-align: center;
+  }
+
+  .handles {
+    margin: 0 auto;
   }
 }
